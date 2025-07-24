@@ -40,7 +40,12 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'react/button-has-type': 'off',
         'i18next/no-literal-string': ['error', { markupOnly: true }],
-        'max-len': ['error', { code: 100, ignoreComments: true }],
+        'max-len': ['error', { code: 120, ignoreComments: true }],
+        'arrow-body-style': 'off',
+        'react/self-closing-comp': ['error', {
+            component: true,
+            html: false,
+        }],
     },
     globals: {
         __IS_DEV__: true,
