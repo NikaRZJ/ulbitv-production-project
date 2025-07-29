@@ -18,6 +18,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
     }
 
     static getDerivedStateFromError(error: Error) {
+        // eslint-disable-next-line no-console
         console.log(error);
         // Update state so the next render will show the fallback UI.
         return { hasError: true };
@@ -25,6 +26,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
 
     componentDidCatch(error:Error, info:ErrorInfo) {
     // You can also log the error to an error reporting service
+        // eslint-disable-next-line no-console
         console.log(error, info);
     }
 
