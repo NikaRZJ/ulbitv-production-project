@@ -39,7 +39,7 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'react/button-has-type': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid'] }],
         'max-len': ['error', { code: 120, ignoreComments: true }],
         'arrow-body-style': 'off',
         'react/self-closing-comp': ['error', {
@@ -54,8 +54,8 @@ module.exports = {
         {
             files: ['**/src/**/*.test.{ts,tsx}'],
             rules: {
-                'i18next/no-literal-string': 'off'
-            }
+                'i18next/no-literal-string': 'off',
+            },
         },
     ],
 };
