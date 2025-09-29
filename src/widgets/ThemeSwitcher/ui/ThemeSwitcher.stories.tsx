@@ -5,12 +5,12 @@ import ThemeSwitcher from './ThemeSwitcher';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'widget/ThemeSwitcher',
-  component: ThemeSwitcher,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+    title: 'widget/ThemeSwitcher',
+    component: ThemeSwitcher,
+    // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
 } as ComponentMeta<typeof ThemeSwitcher>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
@@ -23,5 +23,3 @@ Light.args = {};
 export const Dark = Template.bind({});
 Dark.args = {};
 Dark.decorators = [ThemeDecorator(Theme.DARK)];
-
-
