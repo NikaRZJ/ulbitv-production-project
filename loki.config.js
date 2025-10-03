@@ -12,5 +12,5 @@ module.exports = {
             preset: 'iPhone 7',
         },
     },
-    chromeExecutablePath: '/usr/bin/chromium-browser', // путь для WSL (может отличаться)
+    chromeExecutablePath: '/usr/bin/chromium-browser',
 };
