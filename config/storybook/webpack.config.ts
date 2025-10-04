@@ -35,7 +35,7 @@ export default ({ config }: { config: Configuration }) => {
         });
 
         config.module.rules.push({
-            test: /\.svg$/,
+            test: /\.svg$/i,
             use: ['@svgr/webpack'],
         });
 
