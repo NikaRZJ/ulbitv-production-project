@@ -46,6 +46,7 @@ module.exports = {
             component: true,
             html: false,
         }],
+        'no-param-reassign': ['error', { props: true, ignorePropertyModificationsFor: ['config'] }],
     },
     globals: {
         __IS_DEV__: true,
