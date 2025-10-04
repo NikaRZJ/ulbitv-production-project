@@ -28,7 +28,7 @@ export default ({ config }: { config: Configuration }) => {
     if (config.module?.rules) {
         config.module.rules = config.module.rules.map((rule) => {
             const ruleTest = (rule as RuleSetRule).test;
-            if (ruleTest instanceof RegExp && ruleTest.test('svg')) {
+            if (ruleTest instanceof RegExp && ruleTest.test('.svg')) {
                 return { ...rule as RuleSetRule, exclude: /\.svg$/i };
             }
             return rule;
@@ -36,7 +36,6 @@ export default ({ config }: { config: Configuration }) => {
 
         config.module.rules.push({
             test: /\.svg$/i,
-            issuer: /\.[jt]sx?$/,
             use: ['@svgr/webpack'],
         });
 
